@@ -1,9 +1,8 @@
-// Interface for roles
+// Interface for roles  according to A
 abstract class Role {
   void displayRole();
 }
 
-// Class Person
 class Person implements Role {
   String name;
   int age;
@@ -21,7 +20,6 @@ class Person implements Role {
   }
 }
 
-// Class Student
 class Student extends Person {
   String studentID;
   int grade;
@@ -76,9 +74,9 @@ class Teacher extends Person {
 
 void main() {
 
-  Student nahidul = Student("Nahidul", 20, "Mirpur", "STD123", 12);
+  Student nahidul = Student("Nahidul", 20, "Mirpur", "S23", 12);
   nahidul.courseScores = [90, 85, 82];
-  Teacher rabbil = Teacher("Rabbil", 35, "456 Oak St", "TEA456");
+  Teacher rabbil = Teacher("Rabbil", 35, "St", "T456");
   rabbil.addCourseTaught("Math");
   rabbil.addCourseTaught("English");
   rabbil.addCourseTaught("Bangla");
