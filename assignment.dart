@@ -1,9 +1,8 @@
-// Interface for roles
+// Interface for roles  according to A
 abstract class Role {
   void displayRole();
 }
 
-// Class Person
 class Person implements Role {
   String name;
   int age;
@@ -21,7 +20,6 @@ class Person implements Role {
   }
 }
 
-// Class Student
 class Student extends Person {
   String studentID;
   int grade;
